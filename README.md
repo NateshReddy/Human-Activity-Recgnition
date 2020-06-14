@@ -22,7 +22,10 @@ Next, create folders (still in the data folder) with mkdir train && mkdir test &
 
 Now you can run the scripts in the data folder to move the videos to the appropriate place, extract their frames and make the CSV file the rest of the code references. You need to run first block of the code.
 
+## Extracting features
+Before you can run the model, you need to extract features from the images with the CNN. This is done by running second and third codeblock in the file. 
 
-
+## Training models
+After extracting the features the next block have to be compiled where the model is defined.
 
 The first which we used was the CNN in which we attempted to classify each video based on a single frame. Also we used Inception V3 which was pretrained on imagenet dataset .(also known as transfer learning)  Now instead of just classifying based on CNN model,we used CNN+RNN. Now the features extracted from inception V3,we convert those extracted features into sequences of extracted features and then are passed to LSTM after removing the top classification layer.on which we got 89.74% of accuracy.
