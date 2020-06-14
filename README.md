@@ -29,3 +29,9 @@ Before you can run the model, you need to extract features from the images with 
 After extracting the features the next block have to be compiled where the model is defined.
 
 The first which we used was the CNN in which we attempted to classify each video based on a single frame. Also we used Inception V3 which was pretrained on imagenet dataset .(also known as transfer learning)  Now instead of just classifying based on CNN model,we used CNN+RNN. Now the features extracted from inception V3,we convert those extracted features into sequences of extracted features and then are passed to LSTM after removing the top classification layer.on which we got 89.74% of accuracy.
+
+## Demo/Using models
+In the next codeblock just input the name of the video file you want to test in "image_name". Then the run code and you will be able to see prediction of that test case.
+
+## UCF101 Citation
+Khurram Soomro, Amir Roshan Zamir and Mubarak Shah, UCF101: A Dataset of 101 Human Action Classes From Videos in The Wild., CRCV-TR-12-01, November, 2012.
