@@ -1,4 +1,4 @@
-# Human-Activity-Recgnition
+# Human Activity Recognition
 We worked on action recognition in search and rescue using drone surveillance. Our aim was to classify a video on help or non-help class. Which can be used during a disaster as at many places people can’t reach to check if there is any person needing help but the drone can search the area and notify the location to the rescue team.  
 
 
